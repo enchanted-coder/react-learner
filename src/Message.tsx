@@ -10,6 +10,7 @@ const Message = () => {
 
     return (
         <>
+            <h1>hello there mum</h1>
             <button onClick={TheButton}>a button</button>
         </>
     )
