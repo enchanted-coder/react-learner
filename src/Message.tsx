@@ -1,17 +1,18 @@
+import { useEffect, useState } from "react"
+
 const Message = () => {
 
-    let i = 0
+    const [number, setNumber] = useState(0)
+
     
-    const TheButton = () => {
-        i++
-        console.log("button has been clicked " + i + " times")
-        return <button onClick={TheButton}>{i}</button>
-    }
+    
 
     return (
         <>
+            <h4>{number}</h4>
             
-            <button onClick={TheButton}>a button</button>
+            <button onClick={()=>setNumber(number-1)}>Decrement</button>
+            <button onClick={()=>setNumber(number+1)} >Increment</button>
         </>
     )
     

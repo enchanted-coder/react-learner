@@ -1,0 +1,21 @@
+.dark {
+    background-color: #242424;
+    color: #fff;
+}
+
+.light{
+    background-color: #fff;
+    color: #242424;
+}
+
+.button{
+    margin-left: 1000px;
+    border-radius: 100%;
+    padding: 0;
+    border: 1px solid #fff;
+}
+h4{
+    margin-left: 80px;
+    text
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
