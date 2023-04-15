@@ -1,14 +1,23 @@
+import { useEffect, useState } from "react";
+import '../App.css'
 const ListGroup = () => {
-  const fruits = ["mangoes", "apples", "oranges"];
+  const fruits = ["mangoes", "apples", "oranges", "grapes", "tangerines", "watermelons"];
+
+  // implementing useState hook
+  const [selectedIndex, setSelectedIndex] = useState(0)
+  
+  useEffect(()=>{
+    
+  })
+
   return (
     <>
-    
       <ul className="list-group">
-        <li className="list-group-item" >{fruits[0]}</li>
-        <li className="list-group-item" >{fruits[1]}</li>
-
+        {fruits.map((fruits, index) => (
+          <li onClick={()=> {setSelectedIndex(index)}} key={fruits} className={selectedIndex === index ? "list-group-item active" : "list-group-item"} >{fruits}</li>
+        ))}
       </ul>
-    </>  
+    </>
   );
 };
 
