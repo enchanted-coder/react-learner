@@ -1,3 +1,6 @@
-# This is a learning repository
+# To publish this site:
 
-## React Basics
+- ### npm run build on local machine
+
+- ### git subtree push --prefix dist origin gh-pages
+
