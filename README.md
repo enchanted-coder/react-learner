@@ -1,11 +1,11 @@
 # To publish this site:
 
-- ### npm run build on local machine
+- ### Build the project on your local machine
 ```
     npm run build
 ```
 
-- ### git subtree push --prefix dist origin gh-pages
+- ### push dist files produced from the build to a separate branch called gh-pages
 ```
     git subtree push --prefix dist origin gh-pages
 ```
